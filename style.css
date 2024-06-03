@@ -18,6 +18,7 @@
     --bg-javascript: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
     --white: #ffff;
+    --bg-hover: #f0f5ff;
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg);
 }
@@ -29,6 +30,7 @@ body.escuro {
     --primary-text-color: #ffff;
     --secondary-text-color: #abc1e1;
     --button-bg: #3b4d66;
+    --bg-hover: #324766 ;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
 }
 
@@ -120,7 +122,12 @@ main {
     box-shadow: var(--shadow);
     font-size: 18px;
     font-weight: 500;
-    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+.assuntos button:hover {
+    background-color: var(--bg-hover);
+    transition: 2s;
 }
 
 .assuntos button div {
